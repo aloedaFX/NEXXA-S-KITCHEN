@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEXXA KITCHEN — Premium Food Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="loader">
+            <div class="loader-plate"></div>
+            <div class="loader-text">NEXXA'S KITCHEN</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🍽️</span>
+                <span class="logo-text">NEXXA'S <span class="logo-accent">KITCHEN</span></span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="track.html" class="nav-link">Track Order</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <a href="admin.html" class="admin-link"><i class="fas fa-user-shield"></i></a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page page-home">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="hero-content">
+                <span class="hero-badge">🔥 Fastest Delivery in Town</span>
+                <h1 class="hero-title">
+                    Taste The <span class="text-gradient">Extraordinary</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Premium meals crafted with passion. Order from your phone and watch your food arrive in minutes.
+                </p>
+                <div class="hero-cta">
+                    <a href="menu.html" class="btn btn-primary">
+                        <i class="fas fa-utensils"></i> Order Now
+                    </a>
+                    <a href="track.html" class="btn btn-secondary">
+                        <i class="fas fa-location-dot"></i> Track Order
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat">
+                        <h3>30min</h3>
+                        <p>Avg. Delivery</p>
+                    </div>
+                    <div class="stat">
+                        <h3>4.9★</h3>
+                        <p>Customer Rating</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-card glass">
+                    <img src="fist1.jpg" alt="Delicious meal" />
+                    <div class="floating-badge">
+                        <i class="fas fa-fire"></i>
+                        <span>Hot & Fresh</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Categories preview -->
+        <section class="categories">
+            <div class="section-header">
+                <h2>Browse by <span class="text-gradient">Category</span></h2>
+                <p>Pick from our delicious collections</p>
+            </div>
+            <div class="category-grid">
+                <a href="menu.html" class="category-card" data-category="all">
+                    <div class="category-icon">🍱</div>
+                    <span>All</span>
+                </a>
+                <a href="menu.html?cat=rice" class="category-card" data-category="rice">
+                    <div class="category-icon">🍚</div>
+                    <span>Rice</span>
+                </a>
+                <a href="menu.html?cat=soup" class="category-card" data-category="soup">
+                    <div class="category-icon">🍲</div>
+                    <span>Soups</span>
+                </a>
+                <a href="menu.html?cat=protein" class="category-card" data-category="protein">
+                    <div class="category-icon">🍗</div>
+                    <span>Proteins</span>
+                </a>
+                <a href="menu.html?cat=drinks" class="category-card" data-category="drinks">
+                    <div class="category-icon">🥤</div>
+                    <span>Drinks</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="logo">🍽️ NEXXA <span class="logo-accent">KITCHEN</span></h3>
+                <p>Premium food delivery with a touch of class. Order, track, and enjoy.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="track.html">Track Order</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +234 800 NEXXA FOOD</li>
+                    <li><i class="fas fa-envelope"></i> hello@nexxakitchen.com</li>
+                    <li><i class="fas fa-location-dot"></i> Lagos, Nigeria</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 NEXXA KITCHEN. Crafted with 🔥 for food lovers.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-bag"></i> Your Cart</h3>
+            <button class="cart-close" id="cartClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items rendered by JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <strong id="cartTotal">₦0</strong>
+            </div>
+            <button class="btn btn-primary btn-block" id="checkoutBtn">
+                <i class="fas fa-lock"></i> Proceed to Checkout
+            </button>
+            <button class="btn btn-secondary btn-block" id="whatsappOrder">
+                <i class="fab fa-whatsapp"></i> Order on WhatsApp
+            </button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-content">
+            <button class="modal-close" id="checkoutClose"><i class="fas fa-times"></i></button>
+            <h2><i class="fas fa-credit-card"></i> Checkout</h2>
+            <form id="checkoutForm" class="checkout-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full Name *</label>
+                        <input type="text" id="custName" required placeholder="John Doe" />
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number *</label>
+                        <input type="tel" id="custPhone" required placeholder="+234 800 000 0000" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="custEmail" placeholder="you@example.com" />
+                </div>
+                <div class="form-group">
+                    <label>Delivery Address *</label>
+                    <textarea id="custAddress" required placeholder="Street, City, Landmark"></textarea>
+                </div>
+
+                <h3 class="form-section-title">Order Summary</h3>
+                <div class="order-summary" id="orderSummary"></div>
+
+                <h3 class="form-section-title">Payment Method</h3>
+                <div class="payment-options">
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="transfer" checked />
+                        <div class="payment-card">
+                            <i class="fas fa-building-columns"></i>
+                            <strong>Bank Transfer</strong>
+                            <small>Manual confirmation</small>
+                        </div>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="delivery" />
+                        <div class="payment-card">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <strong>Pay on Delivery</strong>
+                            <small>Cash on arrival</small>
+                        </div>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-lg">
+                    <i class="fas fa-check"></i> Place Order
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Payment Confirmation Modal -->
+    <div class="modal" id="paymentModal">
+        <div class="modal-content success-modal">
+            <button class="modal-close" id="paymentModalClose"><i class="fas fa-times"></i></button>
+            <div class="success-icon"><i class="fas fa-check"></i></div>
+            <h2>Order Placed Successfully!</h2>
+            <p>Your order ID: <strong id="orderIdDisplay"></strong></p>
+            <div class="order-info-card" id="orderInfoCard"></div>
+            <div class="payment-actions">
+                <button class="btn btn-primary" id="paidBtn">
+                    <i class="fas fa-check-circle"></i> I Have Made Payment
+                </button>
+                <button class="btn btn-secondary" id="trackFromModal">
+                    <i class="fas fa-location-dot"></i> Track Order
+                </button>
+            </div>
+            <p class="hint">Save your order ID to track delivery progress</p>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp -->
+    <a href="#" class="whatsapp-float" id="whatsappFloat" aria-label="Order on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Mobile Bottom Bar -->
+    <div class="mobile-bottom-bar">
+        <a href="index.html" class="mob-link"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="menu.html" class="mob-link"><i class="fas fa-utensils"></i><span>Menu</span></a>
+        <button class="mob-cart" id="mobCartBtn">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count" id="mobCartCount">0</span>
+            <span>Cart</span>
+        </button>
+        <a href="track.html" class="mob-link"><i class="fas fa-location-dot"></i><span>Track</span></a>
+        <a href="contact.html" class="mob-link"><i class="fas fa-envelope"></i><span>Contact</span></a>
+    </div>
+
+    <!-- Toast container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
